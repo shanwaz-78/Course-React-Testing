@@ -6,6 +6,10 @@
 .pnp.js
 
 # testing
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
 /coverage
 
 # production

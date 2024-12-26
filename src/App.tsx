@@ -1,9 +1,10 @@
 import React from 'react'
+import Application from './Component/Application/Application';
 
 const App = () => {
   return (
     <div>
-      <h2>hello</h2>
+      <Application />
     </div>
   )
 }

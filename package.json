@@ -13,7 +13,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "coverage": "react-scripts test --coverage --watchAll"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +40,10 @@
     "@types/jest": "^29.5.14",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.5"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/Component/**/*.{ts,tsx}"
+    ]
   }
 }

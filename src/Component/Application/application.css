@@ -1,79 +1,109 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #e0eafc, #cfdef3);
-}
-
-form {
-  max-width: 300px;
+.application-container {
   width: 100%;
-  background: white;
+  max-width: 600px;
+  margin: 50px auto;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-form label {
-  font-size: 14px;
-  font-weight: bold;
+.form-title {
+  font-size: 24px;
   color: #333;
+  margin-bottom: 20px;
 }
 
-form input[type="text"],
-form select {
+.profile-section {
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.application-form .input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input-field,
+.input-select {
   width: 100%;
   padding: 10px;
   font-size: 14px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  transition: border-color 0.3s ease;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-form input[type="text"]:focus,
-form select:focus {
-  border-color: #4caf50;
-  outline: none;
-}
-
-form .terms {
-  font-size: 12px;
+.terms-group {
   display: flex;
   align-items: center;
-  gap: 5px;
+  margin: 15px 0;
 }
 
-form button {
-  background: #4caf50;
-  color: white;
-  border: none;
-  padding: 10px;
+.checkbox {
+  margin-right: 10px;
+}
+
+.terms-label {
   font-size: 14px;
-  border-radius: 5px;
+  color: #555;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.submit-button,
+.reset-button,
+.undo-button {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background 0.3s ease;
 }
 
-form button:hover {
-  background: #45a049;
+.submit-button {
+  background-color: #4caf50;
+  color: white;
 }
 
-form button:active {
-  transform: scale(0.98);
+.reset-button {
+  background-color: #f44336;
+  color: white;
 }
 
-form .terms input {
-  transform: scale(1.2);
-  cursor: pointer;
+.undo-button {
+  background-color: #ffc107;
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.reset-button:hover {
+  background-color: #e53935;
+}
+
+.undo-button:hover {
+  background-color: #ffb300;
 }

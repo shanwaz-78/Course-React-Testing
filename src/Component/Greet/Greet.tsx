@@ -5,7 +5,6 @@ type GreetProp = {
 };
 
 const Greet = ({ name }: GreetProp) => {
-  console.log(name)
   return <div>{name ? `Hello ${name}` : `Hello guest`}</div>;
 };
 

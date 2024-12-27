@@ -8,11 +8,13 @@ describe("Application component", () => {
     render(<Application />);
     const inputElement = screen.getByRole("textbox");
     expect(inputElement).toBeInTheDocument();
-    const heading1 = screen.getByRole("heading", { name: "kyle" });
-    expect(heading1).toBeInTheDocument();
-    const heading2 = screen.getByRole('heading', {name : "will"});
-    expect(heading2).toBeInTheDocument();
     const labelElement = screen.getByLabelText(`Job Location`);
+    const spanElement = screen.getByText('Reset');
+    expect(spanElement).toBeInTheDocument();
+    const spanElement2 = screen.getByText('Undo')
+    const formElement = screen.getByTestId('custom-form');
+    expect(formElement).toBeInTheDocument();
+    expect(spanElement2).toBeInTheDocument();
     expect(labelElement).toBeInTheDocument();
     const jobLocationElement = screen.getByRole("combobox");
     expect(jobLocationElement).toBeInTheDocument();

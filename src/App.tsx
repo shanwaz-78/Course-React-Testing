@@ -1,12 +1,12 @@
-import React from 'react'
-import Application from './Component/Application/Application';
+import React from "react";
+import { Skills } from "./Component/Skills/Skills.tsx";
 
 const App = () => {
   return (
     <div>
-      <Application />
+      <Skills skills={["TypeScript", "Node", "React"]} />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

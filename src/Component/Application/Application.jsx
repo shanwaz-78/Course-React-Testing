@@ -10,11 +10,19 @@ const Application = () => {
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToc1bnD7rCvXMinX06dBFyhOuqCqc60DIzFg&s"
           alt="Profile"
+          data-imgData="img-data"
+          className="profile-image"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToc1bnD7rCvXMinX06dBFyhOuqCqc60DIzFg&s"
+          alt="Profile"
+          data-imgData="img-data"
+          name="img2"
           className="profile-image"
         />
       </div>
 
-      <form className="application-form" data-testId='custom-form'>
+      <form className="application-form" data-testId="custom-form">
         <div className="input-group">
           <label htmlFor="name" className="input-label">
             Name:{" "}

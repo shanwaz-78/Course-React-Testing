@@ -17,6 +17,8 @@ describe("Application component", () => {
     expect(spanElement2).toBeInTheDocument();
     expect(labelElement).toBeInTheDocument();
     const jobLocationElement = screen.getByRole("combobox");
+    const imgElement2 = screen.getAllByRole('img')
+    expect(imgElement2).toHaveLength(2);
     expect(jobLocationElement).toBeInTheDocument();
     const checkboxElement = screen.getByRole("checkbox");
     expect(checkboxElement).toBeInTheDocument();

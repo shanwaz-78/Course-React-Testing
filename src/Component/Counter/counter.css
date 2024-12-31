@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Counter App Container */
+.counter-app {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+/* Counter Display */
+.counter-display {
+  background-color: #f9fafb;
+  border: 2px dashed #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.counter-value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333333;
+}
+
+/* Counter Buttons */
+.counter-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn.increment {
+  background-color: #28a745; /* Green for increment */
+}
+
+.btn.decrement {
+  background-color: #dc3545; /* Red for decrement */
+}
+
+.btn.reset {
+  background-color: #ffc107; /* Yellow for reset */
+}

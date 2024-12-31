@@ -1,10 +1,10 @@
 import React from "react";
-import { Skills } from "./Component/Skills/Skills.tsx";
+import Counter from "./Component/Counter/Counter.tsx";
 
 const App = () => {
   return (
     <div>
-      <Skills skills={["TypeScript", "Node", "React"]} />
+      <Counter />
     </div>
   );
 };

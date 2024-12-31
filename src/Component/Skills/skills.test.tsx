@@ -27,7 +27,7 @@ describe("Skills Components", () => {
   test('Start Learning button is not rendered', () => {
     render(<Skills skills={skills}/>)
     const startLearningBtn = screen.queryByRole('button', {name : "Start Learning"});
-    expect(startLearningBtn).not.toBeInTheDocument();
+    expect(startLearningBtn).not.toBeInTheDocument(); 
   })
 
   test('Start Learning button is eventually rendered', async () => {

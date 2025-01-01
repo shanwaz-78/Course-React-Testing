@@ -1,5 +1,5 @@
-import React from "react";
-import "./application.css";
+import React from 'react';
+import './application.css';
 
 const Application = () => {
   return (
@@ -25,7 +25,7 @@ const Application = () => {
       <form className="application-form" data-testId="custom-form">
         <div className="input-group">
           <label htmlFor="name" className="input-label">
-            Name:{" "}
+            Name:{' '}
           </label>
           <input
             type="text"

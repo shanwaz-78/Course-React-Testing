@@ -1,5 +1,5 @@
-import React from "react";
-import Counter from "./Component/Counter/Counter.tsx";
+import React from 'react';
+import Counter from './Component/Counter/Counter.tsx';
 
 const App = () => {
   return (

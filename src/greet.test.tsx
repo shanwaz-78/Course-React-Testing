@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+/* eslint-disable */
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import Greet from './Component/Greet/Greet';
@@ -8,7 +8,7 @@ describe('Greet', () => {
   test('Greet should render with name', () => {
     render(<Greet name="Kyle" />);
     const element = screen.getByText('Hello Kyle');
-    expect(element).toBeInTheDocument();
+    expect(element).toBeInTheDocument()
   });
 
   test('Greet should render \'Hello guest\' when no name is provided', () => {
